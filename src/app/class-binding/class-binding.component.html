@@ -1,0 +1,26 @@
+<p>class-binding works!</p>
+<!---------------------- Class binding with ClassName ----------------------->
+<h2 class="myColor myWriting">Learning Never Ends</h2>
+
+<!------------ Class binding using [className]="'classname (s)'" property binding -------------->
+ <h2 [className]="'myColor myWriting'">Class Binding using ClassName property binding</h2>
+
+ <!----------------- Html class attribute ----------------->
+  <h2 [class]="'myColor myWriting'">Html Class Attribute</h2>
+
+  <!---- condition based classes (calling variable from .ts file which can change based on conditions)---->
+   <!-- myColor is a css class defined in .cs file and condition is a bool variale that sets true/false -->
+   <!-- <h2 [class]="cssClass">Condition based classes </h2> -->
+
+   <!-- if "condition"= true, it will set/apply myColor css class to h2 element -->
+   <!-- Else, it will no apply it -->
+    <!-- syntax: [class.className]="bool property" -->
+   <h2 [class.myColor]="condition">Condition based classes </h2>
+
+
+   <!------------------- function call class ---------->
+    <h2 [class]="myCall()">Applying class from function</h2>
+
+
+    <!------------------- class binding using ternary operator ---------->
+    <h2 [class]="condition ? 'myColor' : 'myWriting' "></h2>
