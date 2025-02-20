@@ -5,14 +5,16 @@ import { UserComponent } from './user/user.component';
 import { EventsComponent } from './events/events.component';
 import { PropBindingComponent } from './prop-binding/prop-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
-
+import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgModule } from '@angular/core';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
 // decorator function
 @Component({
   selector: 'app-root', //element selector
   // selector: '.app-root', // class selector
   // selector: '[app-root]', // attribute selector
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent],
+  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent],
   templateUrl: './app.component.html',
   // template: `hello world, senga ye`,
   styleUrl: './app.component.css',

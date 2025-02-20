@@ -1,0 +1,28 @@
+<p>style-binding works!</p>
+<!-- [style]='normal CSS' -->
+<h2 [style]="'background-color:yellow;'">Style Binding with [style]</h2>
+<h2 [style]="'background-color:yellow; color:red'">Style Binding with [style]</h2>
+
+<!-- [style]='camelCase CSS' -->
+<h2 [style]="'backgroundColor:blue;'">Style Binding with [style]</h2>
+
+<h2 [style]="'backgroundColor:blue; color: white'">Style Binding with [style]</h2>
+
+<!-- [style] property with object -->
+ <h2 [style]="{'background-color':'purple', 'color':'white'}">Style Binding with [style] and object</h2>
+ <!-- [style] property with object property(from .ts) -->
+ <h2 [style]="stylebinding">Style Binding with [style] and object</h2>
+
+ <!-- style binding does not support array styling (just like ngClass) -->
+ <h2 [style.color]="'green'">Style Binding</h2>
+ <h2 [style.backgroundColor]="'orange'">Style Binding</h2>
+ <h2 [style.fontSize.px]="'30'">Style Binding</h2>
+ <h2 [style.color]="true ? 'red': 'blue'">Style Binding with ternary operator</h2>
+
+ <!-- style binding with ngStyle directive -->
+  <!-- myStyles is a .ts property -->
+  <h2 [ngStyle]="myStyles">Style Binding with ngStyle</h2>
+
+ <h2 [ngStyle]="{'background-color':'red', 'color':'white' }">Style Binding with ngStyle</h2>
+
+

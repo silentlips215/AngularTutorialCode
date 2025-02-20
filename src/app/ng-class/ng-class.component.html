@@ -1,0 +1,28 @@
+<p>ng-class works!</p>
+
+<!-- ngClass with a String -->
+<!-- myWriting and myColor are css classes defined in .css file -->
+ <!-- using normal string -->
+<h2 [ngClass]="'myWriting myColor'">ngClass with a string</h2>
+<!-- using property (redColor) strings from .ts -->
+<h2 [ngClass]="redColor">ngClass with Object</h2>
+
+
+ <!-- ngClass with Array -->
+  <!-- using string -->
+  <h2 [ngClass]="['myWriting', 'myColor']">ngClass with Array</h2>
+  <!-- using properties from .ts -->
+  <h2 [ngClass]="[redColor, myWriting]">ngClass with Array</h2>
+
+  <!-- ngClass with Object -->
+   <h2 [ngClass]="{'myColor': true}">ngClass with Object</h2>
+
+<!-- condition is a variable in .ts file -->
+   <h2 [ngClass]="{'myWriting': condition}">ngClass with Object</h2>
+   
+   <h2 [ngClass]="{'myWriting': condition, 'myColor': true}">ngClass with Object</h2>
+
+
+
+<!-- ngClass without using square brackets (which doesn't work property binding) -->
+   <h2 ngClass='myColor'> ngClass without Square brackets</h2>
