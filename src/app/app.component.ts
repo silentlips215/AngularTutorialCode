@@ -9,13 +9,14 @@ import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgModule } from '@angular/core';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TemplateReferenceComponent } from './template-reference/template-reference.component';
+import { CounterComponent } from './counter/counter.component';
 // decorator function
 @Component({
   selector: 'app-root', //element selector
   // selector: '.app-root', // class selector
   // selector: '[app-root]', // attribute selector
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent],
+  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent, CounterComponent],
   templateUrl: './app.component.html',
   // template: `hello world, senga ye`,
   styleUrl: './app.component.css',
