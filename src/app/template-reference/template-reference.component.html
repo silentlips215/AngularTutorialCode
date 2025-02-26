@@ -1,0 +1,28 @@
+<p>template-reference works!</p>
+
+<!-- template-reference variable helps you access the value of a specfic element value -->
+ <!-- using #temlateReferenceName - it works as as id with id you can use like id.value to access its value -->
+
+ <!-- reference variable with click event -->
+ <h5>Reference variable with click event</h5>
+<input type="text" #nameBox placeholder="Enter Your Name" name="myName">
+<input type="button" (click)="getName(nameBox.value)" value="Click">
+<p>{{displayName}}</p>
+
+
+
+<!-- reference variable with keyup event -->
+ <h5>Reference variable with keyup event</h5>
+ <input type="text" name="firstName" #firstName (keyup)="getfirstName(firstName.value)">
+ <p>{{displayFirstName}}</p>
+
+
+
+
+ <!-- with reference variable you can access many properties of an element like value, innerHTML, innerText and much more -->
+ <h6> Access different properties using Reference Variable</h6>
+ <input type="button" class="btn btn-sm btn-primary" value="Reference Variable" #referenceVariableBtn>
+ <!-- accessing input button value using reference variable -->
+<div>{{referenceVariableBtn.value}}</div> <!-- It will show the referenceVariableBtn value -->
+<div>{{referenceVariableBtn.type}}</div> <!-- It will show the referenceVariableBtn type -->
+<div>{{referenceVariableBtn.classList}}</div> <!-- It will show the referenceVariableBtn classList -->
