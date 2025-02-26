@@ -8,6 +8,7 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgModule } from '@angular/core';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { TemplateReferenceComponent } from './template-reference/template-reference.component';
 // decorator function
 @Component({
   selector: 'app-root', //element selector
