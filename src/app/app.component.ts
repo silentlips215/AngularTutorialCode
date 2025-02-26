@@ -15,7 +15,7 @@ import { TemplateReferenceComponent } from './template-reference/template-refere
   // selector: '.app-root', // class selector
   // selector: '[app-root]', // attribute selector
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent],
+  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent],
   templateUrl: './app.component.html',
   // template: `hello world, senga ye`,
   styleUrl: './app.component.css',
