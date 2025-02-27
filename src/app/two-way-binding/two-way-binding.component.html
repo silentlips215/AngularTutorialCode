@@ -1,0 +1,13 @@
+<p>two-way-binding works!</p>
+
+<!-- we use ngModel for two way binding  -->
+ <!-- two way binding means - performing two way operations and retrieving its value on both side (html-template and class (.ts)) -->
+ <!-- Note: it is important to note that we need to use FormsModule import for ngModel -->
+
+<!-- changing the class (property- variable) in html input element -->
+ <!-- ngModel directive with [()] syntax (also known as banana box syntax) syncs values from UI to a property and vice-versa. -->
+ <input [(ngModel)]="name" type="text">
+
+<!-- Receiving data from a class property -->
+<h2>{{name}}</h2>
+

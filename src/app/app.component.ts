@@ -10,13 +10,15 @@ import { NgModule } from '@angular/core';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TemplateReferenceComponent } from './template-reference/template-reference.component';
 import { CounterComponent } from './counter/counter.component';
+import { FormsModule } from '@angular/forms';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 // decorator function
 @Component({
   selector: 'app-root', //element selector
   // selector: '.app-root', // class selector
   // selector: '[app-root]', // attribute selector
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent, CounterComponent],
+  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent, CounterComponent, FormsModule, TwoWayBindingComponent],
   templateUrl: './app.component.html',
   // template: `hello world, senga ye`,
   styleUrl: './app.component.css',
