@@ -1,0 +1,17 @@
+<p>ng-if works!</p>
+
+<!-- if ngIf = "true", it will display the h1 content -->
+<h1 *ngIf="true">
+    Learning Never Ends
+</h1>
+
+<!-- if ngIf = "false", it will hide the h1 content -->
+<!-- angular completely removes this element from the browser's DOM, meaning you cannot see it in inspect mode unlike display: none (css property) -->
+<h1 *ngIf="false">
+    Learning Never Ends
+</h1>
+
+
+<h1 *ngIf="display">
+    Learning Never Ends
+</h1>

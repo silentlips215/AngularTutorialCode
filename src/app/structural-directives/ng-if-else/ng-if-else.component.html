@@ -1,0 +1,40 @@
+<p>ng-if-else works!</p>
+<!-- ngIf= (0<5) = display(execute if condition gets true); else elsePart(template) gets executed on false -->
+<h1 *ngIf="display; else elsePartt">
+    Learning Never Ends
+</h1>
+<!-- it is important to use ng-template if you are working with ngIf -->
+<!-- because you cannot use else on an element direct like this {{ *ngIf="display; else elsePart (template-reference variable on h1 directly)
+ <h1 #elsePart> }} will not work -->
+<ng-template #elsePartt>
+    <h1>
+        Mehboob Ali Shah
+    </h1>
+</ng-template>
+
+
+<!---------------------------------------->
+
+<!-- if condition = true -> then ifPart -->
+<!-- if condtion = false -> else elsePart -->
+<!-- display is a condtion based property in the ng-if-else (.ts) file -->
+<div *ngIf="display; then ifPart; else elsePart"></div>
+
+<!-- ng-template is an Angular directive used to define reusable HTML content without rendering it directly. We use it to conditionally display or dynamically insert content in components. -->
+<ng-template #ifPart>
+    <h1> If part</h1>
+</ng-template>
+
+<ng-template #elsePart>
+    <h1> Else part</h1>
+</ng-template>
+
+<!---------------------------------------->
+
+<h2 *ngIf="fruit === 'Apple'; else elsePartFruit">
+    Your selected fruit is Apple.
+</h2>
+
+<ng-template #elsePartFruit>
+    You selected fruit is Banana.
+</ng-template>

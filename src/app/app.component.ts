@@ -12,13 +12,15 @@ import { TemplateReferenceComponent } from './template-reference/template-refere
 import { CounterComponent } from './counter/counter.component';
 import { FormsModule } from '@angular/forms';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { NgIfComponent } from './structural-directives/ng-if/ng-if.component';
+import { NgIfElseComponent } from './structural-directives/ng-if-else/ng-if-else.component';
 // decorator function
 @Component({
   selector: 'app-root', //element selector
   // selector: '.app-root', // class selector
   // selector: '[app-root]', // attribute selector
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent, CounterComponent, FormsModule, TwoWayBindingComponent],
+  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent, CounterComponent, FormsModule, TwoWayBindingComponent, NgIfComponent, NgIfElseComponent],
   templateUrl: './app.component.html',
   // template: `hello world, senga ye`,
   styleUrl: './app.component.css',
