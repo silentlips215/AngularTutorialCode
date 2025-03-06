@@ -1,0 +1,31 @@
+<p>ng-switch works!</p>
+
+<!-- defining a container div that will contain all ngSwitchCases -->
+ <!-- using ngSwitch requires you to import CommonModule in ngSwitch-Component.ts file -->
+ 
+ <!-- first code -->
+  <h5>First Code</h5>
+ <div [ngSwitch]="'red'">
+    <div *ngSwitchCase="'red'" [style.color]="'red'">Red</div>
+    <div *ngSwitchCase="'green'" [style.color]="'green'">Green</div>
+    <div *ngSwitchCase="'blue'" [style.color]="'blue'">Blue</div>
+    <!-- ngSwitchDefault gets executed if no condition matches -->
+    <div *ngSwitchDefault>Default</div>
+    
+ </div>
+
+
+ <!-- second code -->
+ <h5>Second Code</h5>
+ <!-- taking value at run time using two-way binding [(ngModel)] -->
+ <input type="text" [(ngModel)]="color">
+
+  <div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'" [ngStyle]="{'color': 'red'}">RED</div>
+    <div *ngSwitchCase="'green'" [ngStyle]="{'color': 'green'}">GREEN</div>
+    <div *ngSwitchCase="'blue'" [ngStyle]="{'color': 'blue'}">BLUE</div>
+    <!-- ngSwitchDefault gets executed if no condition matches -->
+    <div *ngSwitchDefault>Default</div>
+  </div>
+
+ 
