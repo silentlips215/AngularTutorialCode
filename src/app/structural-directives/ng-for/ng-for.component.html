@@ -1,0 +1,82 @@
+<!-- ngFor directive iterats over a collection od dat like an array, list, etc, and crates an HTML element for each of the items from an HTML template -->
+
+<p>ng-for works!</p>
+
+<!-- normally array list items can be accessed using their indices -->
+<div> Normal way access array list items</div>
+<div>{{fruits[0]}}</div>
+<div>{{fruits[1]}}</div>
+<div>{{fruits[2]}}</div>
+<div>{{fruits[3]}}</div>
+
+
+
+<br />
+
+<b> Accessing Array list items using ngFor loop </b>
+<!-- ngFor is a structure directive used to retrieve all array list values at once -->
+<div *ngFor="let fruit of fruits">
+    <div>{{fruit}}</div> <br />
+</div>
+
+<br />
+<br />
+<!-- You can also declare an index value if you need with ngFor -->
+<b>Index as i</b>
+<div *ngFor="let fruit of fruits; index as i">
+    <div>{{i}} {{fruit}}</div> <br />
+</div>
+
+
+<br />
+<br />
+<!-- You can also return true / false values if you need with ngFor -->
+<!-- "first as f" returns, the first value (true) and for the remaining it returns (false) -->
+<b>first as f</b>
+<div *ngFor="let fruit of fruits; first as f">
+    <div>{{f}} {{fruit}}</div> <br />
+</div>
+
+<br />
+<br />
+<!-- You can also return true / false values if you need with ngFor -->
+<!-- "last as l" returns, the last value (true) and for the remaining it returns (false) -->
+<b>last as l</b>
+<div *ngFor="let fruit of fruits; first as l">
+    <div>{{l}} {{fruit}}</div> <br />
+</div>
+
+
+<br />
+<br />
+<!-- You can also return true / false values if you need with ngFor -->
+<!-- "odd as o" returns, the odd index (true) and for the remaining even indices it returns (false) -->
+<b>odd as o</b>
+<div *ngFor="let fruit of fruits; odd as o">
+    <div>{{o}} {{fruit}}</div> <br />
+</div>
+
+<br />
+<br />
+<!-- You can also return true / false values if you need with ngFor -->
+<!-- "even as e" returns, the even index (true) and for the remaining odd indices it returns (false) -->
+<b>even as e</b>
+<div *ngFor="let fruit of fruits; even as e">
+    <div>{{e}} {{fruit}}</div> <br />
+</div>
+
+
+<br />
+<br />
+<b> Array of objects accessing them using ngFor</b>
+<div *ngFor="let person of persons">
+    <div>{{person}}</div> <!-- if you directly use {{person}} in ngFor, you will get outputs like [object  Object] -->
+
+    <!-- to access them correctly you need to use like person.subname (person.name , person.age, person.isMarried)-->
+    <div>{{person.name}}</div>
+    <div>{{person.age}}</div>
+    <div>{{person.isMarried}}</div>
+<br />
+    
+
+</div>

@@ -15,13 +15,14 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { NgIfComponent } from './structural-directives/ng-if/ng-if.component';
 import { NgIfElseComponent } from './structural-directives/ng-if-else/ng-if-else.component';
 import { NgSwitchComponent } from './structural-directives/ng-switch/ng-switch.component';
+import { NgForComponent } from './structural-directives/ng-for/ng-for.component';
 // decorator function
 @Component({
   selector: 'app-root', //element selector
   // selector: '.app-root', // class selector
   // selector: '[app-root]', // attribute selector
   standalone: true,
-  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent, CounterComponent, FormsModule, TwoWayBindingComponent, NgIfComponent, NgIfElseComponent, NgSwitchComponent],
+  imports: [CommonModule, RouterOutlet, UserComponent, EventsComponent, PropBindingComponent, ClassBindingComponent, NgClassComponent, StyleBindingComponent, TemplateReferenceComponent, CounterComponent, FormsModule, TwoWayBindingComponent, NgIfComponent, NgIfElseComponent, NgSwitchComponent, NgForComponent],
   templateUrl: './app.component.html',
   // template: `hello world, senga ye`,
   styleUrl: './app.component.css',
